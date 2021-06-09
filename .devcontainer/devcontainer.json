@@ -1,0 +1,25 @@
+{
+  "name": "vscode-latex-editor",
+  "build": {
+    "dockerfile": "latex.Dockerfile",
+    "context": "..",
+    "args": {}
+  },
+  "mounts": [],
+  "postCreateCommand": "",
+  "extensions": [
+    "eamodio.gitlens",
+    "shardulm94.trailing-spaces",
+    "stkb.rewrap"
+  ],
+  "settings": {
+    "files.eol": "\n",
+    "latex-workshop.chktex.enabled": true,
+    "latex-workshop.latex.clean.subfolder.enabled": true,
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "editor.formatOnSave": true,
+    "files.associations": {
+      "*.tex": "latex"
+    }
+  }
+}
